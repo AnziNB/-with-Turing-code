@@ -4,7 +4,7 @@ var ture : int
 var count : int := 0
 % zhe shi fei hua,dui bu?
 put "       1. This a number guess game "
-put "       2. The game need two people"
+put "       2. The game need two people to play"
 put "       3.The P1 set a number "
 put "       4.The P2 will guess the number "
 put "       5.For your friend ship, It won't be too big"
