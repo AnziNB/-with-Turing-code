@@ -43,9 +43,9 @@ loop
     get guess
     count := count + 1
     if guess < ture then
-        put "  try a lower number  "
+        put "  try a higher number  "
     elsif guess > ture then
-        put "  try a higher number "
+        put "  try a lower number "
     else
         put "You got it with ", count, " times,Good Good."
         exit
