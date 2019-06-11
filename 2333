@@ -19,7 +19,7 @@ loop
     exit when reply = "y"
 end loop
 put "The P1 enter your number " ..
-get guess
+get true
 
 loop
     put "The program will encrypt It,Do you agree?"
@@ -40,7 +40,7 @@ put " Give it to P2 "
 loop
     put "P2 enter your guess ,guess the number  ",
         "(number between 0 and 100) " ..
-    get ture
+    get guess
     count := count + 1
     if guess < ture then
         put "  try a lower number  "
