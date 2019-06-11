@@ -19,7 +19,7 @@ loop
     exit when reply = "y"
 end loop
 put "The P1 enter your number " ..
-get true
+get ture
 
 loop
     put "The program will encrypt It,Do you agree?"
