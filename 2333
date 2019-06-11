@@ -1,0 +1,53 @@
+var guess : int
+var reply : string
+var ture : int
+var count : int := 0
+% zhe shi fei hua,dui bu?
+put "       1. This a number guess game "
+put "       2. The game need two people"
+put "       3.The P1 set a number "
+put "       4.The P2 will guess the number "
+put "       5.For your friend ship, It won't be too big"
+put "       6.It should be between 0 and 100"
+loop
+   
+    put "Do you want to play? Answer y or n " ..
+    get reply
+    if reply = "n" then
+        put " oh no, come on u play it"
+    end if
+    exit when reply = "y"
+end loop
+put "The P1 enter your number " ..
+get guess
+
+loop
+    put "The program will encrypt It,Do you agree?"
+    put "Answer y or n" ..
+    get reply
+    if reply = "n" then
+        put "You must agree encrypt it,whenever the game can not be keep going."
+        put "because the P2 will see your number"
+    end if
+    exit when reply = "y"
+end loop
+for counter : 1 .. 1000
+    put "* " ..
+end for
+put skip
+put "succesful"
+put " Give it to P2 "
+loop
+    put "P2 enter your guess ,guess the number  ",
+        "(number between 0 and 100) " ..
+    get ture
+    count := count + 1
+    if guess < ture then
+        put "  try a lower number  "
+    elsif guess > ture then
+        put "  try a higher number "
+    else
+        put "You got it with ", count, " times,Good Good."
+        exit
+    end if
+end loop
